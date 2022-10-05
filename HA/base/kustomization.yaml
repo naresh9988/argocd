@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: argocd
+
+
+resources:
+- argocd-ha-install.yaml
+- argocd-ingress-internal.yaml
+- argocd-ingress-external.yaml
+- argocd-ingress-grpcs.yaml
+- argocd-notifications-cm.yaml
